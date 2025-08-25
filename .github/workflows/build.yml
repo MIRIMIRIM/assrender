@@ -109,7 +109,7 @@ jobs:
           meson wrap install libpng
           meson wrap install zlib
           
-          meson -Ddefault_library=static -Dbuildtype=release -Dasm=enabled -Db_vscrt=static_from_buildtype build
+          meson -Ddefault_library=static -Dbuildtype=release -Dasm=enabled -Db_vscrt=static_from_buildtype -Dc_std=c11 -Dcpp_std=c++17 build
           meson compile -C build
           meson install -C build
 
