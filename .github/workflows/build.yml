@@ -1,6 +1,7 @@
 name: build
 
-on: [push]
+on:
+  workflow_dispatch:
 
 env:
   fc_ver: 2.17.1
